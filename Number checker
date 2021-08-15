@@ -1,0 +1,8 @@
+// Write a function that takes two numbers and 
+// returns max of two
+// let number = maxNum(8, 5);
+console.log(number);
+
+function maxNum(num1, num2) {
+    return (num1 > num2) ? num1 : num2;
+    }
