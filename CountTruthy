@@ -1,0 +1,13 @@
+// Create function take accepts an array as input
+// Counts the number of truthy elements in the array
+
+const validList = [1, 2, 'feet', 4, null, NaN];
+console.log (countTruthy(validList));
+
+function countTruthy(array) {
+    let count = 0;
+    for (let value of array)
+        if (value)
+        count++;
+    return count;
+}
