@@ -1,0 +1,8 @@
+// Write a function that returns T if width is greater than height
+// otherwise it returns false
+
+console.log(isLandscaping(800, 1500));
+
+function isLandscaping(width, height) {
+   return (width > height);
+}
