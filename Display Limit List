@@ -1,0 +1,12 @@
+// Create a function that accepts a number as limit
+// Display all numbers in the limit 
+// with 'Even' or 'Odd' by number
+
+showNumbers(10);
+
+function showNumbers(limit) {
+    for (let i = 0; i <= limit; i++) {
+    const message = (i % 2 === 0) ? 'EVEN' : 'ODD';
+    console.log(i, message);
+    }
+}
