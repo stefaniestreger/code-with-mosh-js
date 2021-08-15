@@ -1,0 +1,22 @@
+// Create function to check speed
+// If speed limit = 70
+// Every 5 miles over speed limit, assign one point
+// When points = 12 or more, print 'License Suspended'
+// Use Math.Floor() function
+
+checkSpeed(71);
+
+function checkSpeed(speed) {
+    const speedLimit = 70;
+    const milesPerPoint = 5;
+    
+    if (speed < speedLimit + milesPerPoint) {
+        console.log('Ok');
+    }
+    
+    const points = Math.floor((speed - speedLimit) / milesPerPoint);
+    if (points >= 12)
+        console.log('License suspended');
+    else 
+        console.log('Points: ', points);
+}
