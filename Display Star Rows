@@ -1,0 +1,13 @@
+// Create a function that passes a limit
+// For each number in the limit, show a row of stars matching that number
+
+showStars(25);
+
+function showStars(limit) {
+    for (let row = 1; row <= limit; row++) {
+        let pattern = '';
+        for (let i = 0; i < row; i++)
+            pattern += '*';
+        console.log(pattern);
+    }
+}
