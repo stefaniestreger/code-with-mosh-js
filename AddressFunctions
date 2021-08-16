@@ -1,0 +1,24 @@
+// Create two functions (factory and constructor)
+// Initialize a new address variable
+
+// Factory
+function createAddress (street, city, zipCode) {
+    return {
+        street,
+        city,
+        zipCode
+    };
+}
+
+const address = createAddress('147 Walton St', 'Nashville', '37075');
+console.log(address);
+---------------------------------------------------------------------------
+// Constructor
+function Address(street, city, zipCode) { 
+    this.street = street;
+    this.city = city;
+    this.zipCode = zipCode;
+}
+
+let address1 = new Address('147 Walton St', 'Nashville', '37075');
+console.log(address1);
