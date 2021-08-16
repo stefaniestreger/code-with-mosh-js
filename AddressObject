@@ -1,0 +1,16 @@
+// Create an address object with 3 properties: street, city, zip
+// Create function to showAddress
+// Display all properties of the object and their attributes
+
+let address = {
+    street: 'a',
+    city: 'b',
+    zipCode: 'c'
+};
+
+function showAddress(address) {
+    for (let key in address)
+        console.log(key, address[key]);
+}
+
+showAddress (address);
