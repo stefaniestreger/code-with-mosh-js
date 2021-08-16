@@ -1,0 +1,29 @@
+// Create function that calculates a grade for a student from array
+// 1-59: F
+// 60-69: D
+// 70-79: C
+// 80-89: B
+// 90-100: A
+
+const grades = [78, 95, 100, 90];
+
+console.log(showGrade(grades));
+
+function calculateAverage(array) {
+    let total = 0;
+
+    for (let mark of array)
+        total += mark;
+            
+    return total / array.length;
+}
+
+function showGrade(grades) {
+    const average = calculateAverage(grades);
+
+    if (average < 60) return "F";
+    if (average < 70) return "D";  
+    if (average < 80) return "C";
+    if (average < 90) return "B";
+    return "A"; 
+}
