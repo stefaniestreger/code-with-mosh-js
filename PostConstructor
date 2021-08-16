@@ -1,0 +1,15 @@
+// Use constructor function to create blog post object
+// Imagine building a blogger engine
+// User has created post, but not published yet
+
+let post = new BlogPost('How to Program in JavaScript', 'What a wonderful thing to learn!', 'Stefanie Streger');
+console.log(post);
+
+function BlogPost(title, body, author) {
+    this.title = title;
+    this.body = body;
+    this.author = author;
+    this.views = 0;
+    this.comments = [];
+    this.isLive = false;
+}
