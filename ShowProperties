@@ -1,0 +1,16 @@
+// Create a function that displays string properties of an object
+
+const car = {
+    make: 'Chrysler',
+    model: 'Jeep',
+    year: 2018,
+    color: 'red'
+};
+
+showProperties(car);
+
+function showProperties(object) {
+    for (key in object)
+        if (typeof object[key] === 'string')
+            console.log(key, object[key]);
+}
