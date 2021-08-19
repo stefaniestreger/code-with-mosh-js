@@ -1,0 +1,14 @@
+// Create new function like includes()
+// Takes array, searchElement as parameters
+// If searchElement is in array, return true; else return false
+
+const numbers = findValue([1, 2, 5, 6, 7], 7);
+
+console.log(numbers);
+
+function findValue(array, searchElement) {
+    for (let n of array)
+        if (n === searchElement)
+            return true;
+    return false;
+}
