@@ -1,0 +1,6 @@
+// Write a function that countBs() that takes a string as it's only argument
+// Return a number that indicates how many uppercase "B" characters there are in the string
+
+// Write another function countChar() that behaves like countBs, except it takes a second argument
+// This second argument indicates the character that is to be counted (rather than just uppercase Bs
+// Rewrite countBs to make use of this new function
