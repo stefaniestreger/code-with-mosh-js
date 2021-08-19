@@ -1,0 +1,14 @@
+// Create new function for arrayFromRange()
+// Takes min, max as params
+// Function returns array created of all nums between min and mix values
+
+const numbers = arrayFromRange(-10, 4);
+
+console.log(numbers);
+
+function arrayFromRange(min, max) {
+    const output = [];
+    for (let i = min; i <= max; i++)
+        output.push(i);
+    return output;        
+}
