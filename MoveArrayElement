@@ -1,0 +1,24 @@
+// Create a move() function that moves an element in an array by a set amount
+// Allow negative numbers
+// Display error message when offset is larger than array length
+// index is element you want to move
+// offset is count of indexes (L or R) that you want to move it to
+  // offset = 2 = move 2 positions from current index
+
+const numbers = [1, 2, 3, 4];
+
+console.log(move(numbers, 2, 2));
+
+function move(array, index, offset) {
+    const position = index + offset;
+    if (position >= array.length || position < 0) {
+        console.error('Invalid offset.');
+        return;
+    }
+    
+    const output = [...array];
+    const element = output.splice(index, 1)[0]; 
+    output.splice(position, 0, element)
+    return output;
+}
+    
