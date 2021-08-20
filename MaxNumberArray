@@ -1,0 +1,45 @@
+// Create function to get max number in array
+
+const numbers = [1, 2, -1, 3, 4, 8, 4, 9];
+const numbers2 = []
+
+console.log(getMax(numbers2));
+
+function getMax(array) {
+    if (array.length === 0) return 'Array is empty';
+
+    const sortedArray = array.reverse(array);
+    return sortedArray[0];
+
+}
+-------------------------------------------------
+// Another implementation using a for loop
+
+const numbers = [1, 2, -1, 3, 4, 8, 4, 9];
+const numbers2 = []
+
+console.log(getMax(numbers));
+
+function getMax(array) {
+    if (array.length === 0) return 'Array is empty';
+
+    let max = array[0];
+
+    for (let i = 1; i < array.length; i++)
+        if (array[i] > max)
+            max = array[i];
+    return max;
+}
+---------------------------------------------------
+// Challenge: do this with reduce() method
+
+const numbers = [1, 2, -1, 3, 4, 8, 4, 9];
+const numbers2 = []
+
+console.log(getMax(numbers));
+
+function getMax(array) {
+    if (array.length === 0) return undefined;
+    
+    return array.reduce((a, b) => (a > b) ? a : b);
+}
