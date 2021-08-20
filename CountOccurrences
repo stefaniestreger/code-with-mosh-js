@@ -1,0 +1,22 @@
+// Create a new function to count occurrences of an element in an array
+// Display the count in console
+
+const numbers = [1, 2, 3, 4, 2, 8, 9];
+
+console.log(countOccurrences(numbers, 2));
+
+function countOccurrences(array, searchElement) {
+    let count = 0;
+    for (let element of array)
+        if (element === searchElement)
+            count++;   
+        return count; 
+}
+
+// Challenge: do this using the reduce() method
+function countOccurrences(array, searchElement) {
+    array.reduce((accumulator, current) => {
+        const occurrence = (current === searchElement) ? 1 : 0;
+        return accumulator + occurrence;
+    }, 0);
+}
