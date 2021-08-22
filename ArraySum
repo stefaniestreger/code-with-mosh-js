@@ -1,0 +1,20 @@
+// Create a sum() function 
+// The function should take an array of values and total their sum
+
+console.log(sum(1, 4, 6, 3, 19));
+
+function sum(...items) {
+
+    return items.reduce((a, b) => a + b);
+}
+
+// Challenge: make the function accept an array of values and total
+
+console.log(sum([1, 4, 6, 3, 19]));
+
+function sum(...items) {
+    if (items.length === 1 && Array.isArray(items[0]))
+        items = [...items[0]];
+
+    return items.reduce((a, b) => a + b);
+}
