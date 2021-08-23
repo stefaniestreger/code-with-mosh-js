@@ -15,7 +15,7 @@ function countOccurrences(array, searchElement) {
 
 // Challenge: do this using the reduce() method
 function countOccurrences(array, searchElement) {
-    array.reduce((accumulator, current) => {
+    return array.reduce((accumulator, current) => {
         const occurrence = (current === searchElement) ? 1 : 0;
         return accumulator + occurrence;
     }, 0);
