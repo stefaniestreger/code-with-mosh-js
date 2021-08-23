@@ -1,0 +1,23 @@
+// Modify the countOccurrences function to include error handling
+// Throw exception when param is not an array
+// Wrap console log message in try/catch block
+// Log the exception to the console
+
+try {
+    const numbers = [1, 2, 3, 4, 2, 8, 9];
+    const count = countOccurrences(numbers, 8);
+    console.log(count);
+}
+catch(e) {
+    console.log(e.message);
+}
+
+function countOccurrences(array, searchElement) {
+    if (!Array.isArray(array))
+        throw new Error('Value must be an array');
+
+    return array.reduce((accumulator, current) => {
+        const occurrence = (current === searchElement) ? 1 : 0;
+        return accumulator + occurrence;
+    }, 0);
+}
